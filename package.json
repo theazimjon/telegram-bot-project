@@ -1,0 +1,25 @@
+{
+  "name": "telegram-bot-project",
+  "version": "1.0.0",
+  "description": "This is a template for creating a Telegram bot project. Works with Telegraf.js and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist -m",
+    "start": "node build/index.js",
+    "start:dev": "npx nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": { 
+    "dotenv": "^16.3.1",
+    "mongoose": "^7.5.0", 
+    "telegraf": "^4.12.2",
+    "telegraf-session-local": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "@types/node-cron": "^3.0.8",
+    "typescript": "^5.2.2"
+  }
+}
